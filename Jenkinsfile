@@ -3,20 +3,23 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building pipeline on teia machine...'
-                // Adicione comandos de build aqui
+                echo 'Building teia...'
+                // Adicione comandos de build aqui, por exemplo:
+                sh 'echo "Compilando o código teia..."'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing jeking on teia machine...'
-                // Adicione comandos de teste aqui
+                echo 'Testing teia...'
+                // Adicione comandos de teste aqui, por exemplo:
+                sh 'echo "Executando testes teia..."'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying code on jekins...'
-                // Adicione comandos de deploy aqui
+                echo 'Deploying teia...'
+                // Adicione comandos de deploy aqui, por exemplo:
+                sh 'echo "Fazendo deploy teia..."'
             }
         }
     }
